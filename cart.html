@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="topbar-left">
+            <img src="dc_logo.png" class="logo-icon">
+        </div>
+    </div>  
+    <div class="dashboard-navbar">
+        <nav>
+            <ul> 
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li class="dashboard-icon">
+                    <span class="icon-cart"></span>
+                    <span class="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<br>
+<body>
+<!-- Add this below your navbar and above the footer in cart.html -->
+<div class="cart-section">
+    <h1 class="cart-title">Your Cart</h1>
+    <div class="cart-subtitle">Your Ride Is Almost Ready – Just One More Step!</div>
+         <a href="products.html" class="cart-continue">Continue Shopping</a>
+    <div class="cart-table-container">
+        <div class="cart-table-header" style="display: flex; justify-content: space-between;">
+            <span>Products</span>
+            <span style="margin-left: 60px; flex: 1;">Price</span>
+            <span style="flex: 1; margin-left: -100px;">Sale %</span>
+            <span style="flex: 1; margin-left: -100px;">Discount</span>
+            <span style="flex: 1; margin-left: -90px;">Quantity</span>
+            <span style="flex: 1; margin-left: -90px;">Total</span>
+        </div>
+        <div class="cart-table-row">
+            <div class="cart-product-info">
+                <img src="ab.jpg" alt="Honda Beat" class="cart-product-img">
+                <div>
+                    <div class="cart-product-name">HONDA BEAT</div>
+                    <div class="cart-product-type">LEGENDARY VERSION</div>
+                </div>
+            </div>
+            <div class="cart-price">₱ 1,100.00</div>
+            <div class="cart-sale">40%</div>
+            <div class="cart-discount">₱ 440.00</div>
+            <div class="cart-quantity">
+                <button class="cart-qty-btn">-</button>
+                <span class="cart-qty-value">1</span>
+                <button class="cart-qty-btn">+</button>
+            </div>
+            <div class="cart-total">₱ 660.00</div>
+            <button class="cart-remove-btn"><span class="material-icons">delete</span></button>
+        </div>
+        <div class="cart-table-row">
+            <div class="cart-product-info">
+                <img src="ac.jpg" alt="Yamaha Mio" class="cart-product-img">
+                <div>
+                    <div class="cart-product-name">YAMAHA MIO</div>
+                    <div class="cart-product-type">PHOENIX VERSION</div>
+                </div>
+            </div>
+            <div class="cart-price">₱ 950.00</div>
+            <div class="cart-sale">20%</div>
+            <div class="cart-discount">₱ 190.00</div>
+            <div class="cart-quantity">
+                <button class="cart-qty-btn">-</button>
+                <span class="cart-qty-value">2</span>
+                <button class="cart-qty-btn">+</button>
+            </div>
+            <div class="cart-total">₱ 1,520.00</div>
+            <button class="cart-remove-btn"><span class="material-icons">delete</span></button>
+        </div>
+    </div>
+    <div class="cart-summary">
+        <div class="cart-total-label">Estimated TOTAL: <span>₱ 2,180.00</span></div>
+        <div class="cart-summary-desc">Taxes, discounts and shipping calculated at checkout.</div>
+        <button class="cart-checkout-btn">Checkout</button>
+    </div>
+</div>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-col footer-brand">
+            <img src="dc_logo.png" alt="DC Monorack Logo" class="footer-logo">
+            <div class="footer-brand-desc">
+                Proving high-quality motorcycle<br>bracket since 2017.
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">IMPORTANT LINKS</div>
+            <ul>
+                <li><a href="#">Phoenix Version</a></li>
+                <li><a href="#">Legendary Version</a></li>
+                <li><a href="#">Stay Grab Bar</a></li>
+                <li><a href="#">Other Products</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">SUPPORT</div>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#">Return and Refund</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">FOLLOW US</div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/dcmonorackph"><i class="material-icons" style="color:grey">facebook</i></a>
+                <a href="https://www.instagram.com/dcmonorack17/"><i class="material-icons" style="color:grey">camera_alt</i></a>
+                <a href="https://www.tiktok.com/@teamdcmonorack17"><i class="material-icons" style="color:grey">tiktok</i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
