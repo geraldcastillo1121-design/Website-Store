@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="topbar-left">
+            <img src="image/dc_logo.png" class="logo-icon">
+        </div>
+    </div>  
+    <div class="dashboard-navbar">
+        <nav>
+            <ul> 
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li class="dashboard-icon">
+                    <span class="icon-cart"></span>
+                    <span class="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Contact Section Start -->
+    <div class="contact-section">
+        <div class="contact-flex">
+            <div class="contact-form-col">
+                <h1 class="contact-title">Talk to Us!</h1>
+                <div class="contact-subtitle">Need assistance or product info? We're here to help.</div>
+                <form class="contact-form">
+                    <div class="contact-row">
+                        <div class="contact-field">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="contact-field">
+                            <label for="contactnumber">Contact Number</label>
+                            <input type="text" id="contactnumber" name="contactnumber" maxlength="11" pattern="\d{11}" required
+            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,11);"
+            title="Please enter an 11-digit contact number">
+                        </div>
+                    </div>
+                    <div class="contact-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="contact-field">
+                        <label for="comment">Comment/Inquiry</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                    <div class="contact-field">
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                    </div>
+                    <button type="submit" class="contact-btn">Send</button>
+                </form>
+            </div>
+            <div class="contact-map-col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3856.212681856868!2d120.8788548!3d14.8693812!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1756860013757!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-col footer-brand">
+            <img src="image/dc_logo.png" alt="DC Monorack Logo" class="footer-logo">
+            <div class="footer-brand-desc">
+                Proving high-quality motorcycle<br>bracket since 2017.
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">IMPORTANT LINKS</div>
+            <ul>
+                <li><a href="#">Phoenix Version</a></li>
+                <li><a href="#">Legendary Version</a></li>
+                <li><a href="#">Stay Grab Bar</a></li>
+                <li><a href="#">Other Products</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">SUPPORT</div>
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#">Return and Refund</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">FOLLOW US</div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/dcmonorackph" target="_blank" rel="noopener">
+                    <i class="material-icons" style="color:grey">facebook</i>
+                </a>
+                <a href="https://www.instagram.com/dcmonorack17/" target="_blank" rel="noopener">
+                    <i class="material-icons" style="color:grey">camera_alt</i>
+                </a>
+                <a href="https://www.tiktok.com/@teamdcmonorack17" target="_blank" rel="noopener">
+                    <i class="material-icons" style="color:grey">tiktok</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
