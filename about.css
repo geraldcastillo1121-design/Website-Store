@@ -1,20 +1,20 @@
 @font-face {
             font-family: 'Poppins';
-            src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+            src: url('Poppins-Regular.ttf') format('truetype');
             font-weight: 400;
             font-style: normal;
         }
 
 @font-face {
             font-family: 'KOMIKAX';
-            src: url('../fonts/KOMIKAX.ttf') format('truetype');
+            src: url('KOMIKAX.ttf') format('truetype');
             font-weight: 500;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'Gildeon';
-            src: url('../fonts/Gildeon.otf') format('truetype');
+            src: url('Gildeon.otf') format('truetype');
             font-weight: 500;
             font-style: normal;
         }
@@ -771,3 +771,4 @@ img[alt="Background Image"] {
         font-size: 18px;
     }
 }
+
